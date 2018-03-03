@@ -5719,11 +5719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/danharris/Developer/git/FootballData/FootballData.Tests/FootballData.Tests.csproj",
+      "projectUniqueName": "/Users/danharris/Developer/FootballData/FootballData.Tests/FootballData.Tests.csproj",
       "projectName": "FootballData.Tests",
-      "projectPath": "/Users/danharris/Developer/git/FootballData/FootballData.Tests/FootballData.Tests.csproj",
+      "projectPath": "/Users/danharris/Developer/FootballData/FootballData.Tests/FootballData.Tests.csproj",
       "packagesPath": "/Users/danharris/.nuget/packages/",
-      "outputPath": "/Users/danharris/Developer/git/FootballData/FootballData.Tests/obj/",
+      "outputPath": "/Users/danharris/Developer/FootballData/FootballData.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5740,8 +5740,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/danharris/Developer/git/FootballData/FootballData/FootballData.csproj": {
-              "projectPath": "/Users/danharris/Developer/git/FootballData/FootballData/FootballData.csproj"
+            "/Users/danharris/Developer/FootballData/FootballData/FootballData.csproj": {
+              "projectPath": "/Users/danharris/Developer/FootballData/FootballData/FootballData.csproj"
             }
           }
         }

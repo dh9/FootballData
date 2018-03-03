@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/danharris/Developer/git/FootballData/FootballData/FootballData.csproj",
+      "projectUniqueName": "/Users/danharris/Developer/FootballData/FootballData/FootballData.csproj",
       "projectName": "FootballData",
-      "projectPath": "/Users/danharris/Developer/git/FootballData/FootballData/FootballData.csproj",
+      "projectPath": "/Users/danharris/Developer/FootballData/FootballData/FootballData.csproj",
       "packagesPath": "/Users/danharris/.nuget/packages/",
-      "outputPath": "/Users/danharris/Developer/git/FootballData/FootballData/obj/",
+      "outputPath": "/Users/danharris/Developer/FootballData/FootballData/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
