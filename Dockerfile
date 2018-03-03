@@ -1,0 +1,31 @@
+FROM microsoft/dotnet:2.0-sdk AS build
+WORKDIR /app
+
+# copy csproj and restore as distinct layers
+COPY *.sln .
+COPY FootballData/*.csproj ./FootballData/
+COPY FootballData.Tests/*.csproj ./FootballData.Tests/
+RUN dotnet restore
+
+# copy and build everything else
+COPY FootballData/. ./FootballData/
+COPY FootballData.Tests/. ./FootballData.Tests/
+
+RUN dotnet build
+
+FROM build AS testrunner
+WORKDIR /app/FootballData.Tests
+ENTRYPOINT ["dotnet", "test","--logger:trx"]
+
+FROM build AS test
+WORKDIR /app/FootballData.Tests
+RUN dotnet test
+
+FROM test AS publish
+WORKDIR /app/FootballData
+RUN dotnet publish -o out
+
+FROM microsoft/dotnet:2.0-runtime AS runtime
+WORKDIR /app
+COPY --from=publish /app/FootballData/out ./
+ENTRYPOINT ["dotnet", "FootballData.dll"]
